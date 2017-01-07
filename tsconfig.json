@@ -1,0 +1,19 @@
+//
+// TypeScript compiler configuration file.
+// Having this file allows running "tsc" without arguments.
+//
+{
+    "compilerOptions": {
+        "module": "amd",
+        "target": "es5",
+        "sourceMap": true,
+        "outDir": "./dist/amd"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules"
+    ]
+}

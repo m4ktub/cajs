@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Game of Life - CAJS Examples</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>
+</head>
+
+<body>
+  <section class="title">
+    <h1>Game of Life</h1>
+    <p>This is a simple version of the popular Conway's Game of Life cellular automaton.</p>
+  </section>
+  
+  <script>
+    require.config({
+        baseUrl: '../dist/amd'
+    });
+    requirejs(['ca'], function(ca) {
+        console.log('step = ' + (new ca.CA()).stepper.step);
+    });
+  </script>
+</body>
+</html>

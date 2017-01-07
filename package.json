@@ -1,0 +1,40 @@
+{
+  "name": "cajs",
+  "description": "Cellular Automata in Javascript",
+  "version": "0.1.0",
+  "author": {
+    "name": "Claudio Gil",
+    "email": "claudio.f.gil@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:m4ktub/cajs.git"
+  },
+  "keywords": [
+    "cellular",
+    "automata",
+    "simulation",
+    "canvas",
+    "interactive"
+  ],
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/m4ktub/cajs/raw/master/LICENSE"
+    }
+  ],
+  "devDependencies": {
+    "typescript": "2.1.4",
+    "http-server": "0.9.0", 
+    "typedoc": "0.5.3"
+  },
+  "scripts": {
+    "build": "npm run docs && npm run compile",
+    "compile": "tsc",
+    "docs": "typedoc --name \"Cellular Automata JS\" --target ES5 --module amd --out ./dist/docs ./src",
+    "start": "http-server -c0 -a localhost -s"
+  },
+  "dependencies": {
+  }
+}
